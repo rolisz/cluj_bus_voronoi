@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voronoi map of Cluj bus stations</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <style>
+    #map {
+        height:500px;
+    }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script>
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('map').setView([46.762149,23.5718], 15);
+
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+d3.json("us-states.json", function(collection) {
+  // code here
+});
+</script>
+</body>
+</html>
