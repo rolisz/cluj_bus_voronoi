@@ -1,0 +1,6 @@
+[submodule "streets"]
+	path = streets
+	url = https://github.com/madeincluj/street-names.git
+[submodule "routes"]
+	path = routes
+	url = https://github.com/madeincluj/bus-routes.git
